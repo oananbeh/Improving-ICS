@@ -1,5 +1,9 @@
+# CamouflageNet — Full Implementation
+
 **Paper:** *Improving ICS Security Through Honeynets and Machine Learning Techniques*
-**Authors:** Obieda Ananbeh, Wala Alnozami
+**Authors:** 
+**Affiliation:**
+
 ---
 
 ## Overview
@@ -239,26 +243,6 @@ https://itrust.sutd.edu.sg/itrust-labs_datasets/dataset_info/
 | Command Injection | 27,700 | 88.4 | 3.6 | 0.91 |
 | **Overall (Weighted)** | **180,000** | **96.5** | **1.8** | **0.93** |
 
----
-
-## Architecture Overview (Figure 1)
-
-```
- ┌──────────────────────────────────────────────────────────────────┐
- │                    SCADA Security Architecture                    │
- │                                                                   │
- │  Attacker ─────────→ IDS ──[suspicious]──→ CamouflageNet        │
- │                        │                   (Honeypots × 20)      │
- │                        │[normal]                │                 │
- │                        ↓                        │ raw logs        │
- │              Production Network                 ↓                 │
- │              (PLCs, RTUs, HMIs)         ML Analysis Engine        │
- │                        ↑               (k-Center Clustering)      │
- │                        │                        │                 │
- │              IPS ←─[block rules]────────────────┘                │
- │           (Protector)                                             │
- └──────────────────────────────────────────────────────────────────┘
-```
 
 ---
 
