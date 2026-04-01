@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Full System",
+    "DR": 96.9,
+    "FPR": 1.8,
+    "Precision": 90.5,
+    "F1": 0.936,
+    "TP": 174354,
+    "FP": 18360,
+    "TN": 1001640,
+    "FN": 5646,
+    "N_attacks": 180000,
+    "N_benign": 1020000,
+    "TTI": 404.4439118324577
+  },
+  {
+    "name": "\u2013 CamouflageNet (static honeypot)",
+    "DR": 95.1,
+    "FPR": 1.9,
+    "Precision": 89.8,
+    "F1": 0.924,
+    "TP": 171114,
+    "FP": 19380,
+    "TN": 1000620,
+    "FN": 8886,
+    "N_attacks": 180000,
+    "N_benign": 1020000,
+    "TTI": 120.77466351019595
+  },
+  {
+    "name": "\u2013 ML Engine (manual review)",
+    "DR": 78.3,
+    "FPR": 4.7,
+    "Precision": 74.6,
+    "F1": 0.764,
+    "TP": 140880,
+    "FP": 47940,
+    "TN": 972060,
+    "FN": 39120,
+    "N_attacks": 180000,
+    "N_benign": 1020000,
+    "TTI": 404.4439118324577
+  },
+  {
+    "name": "\u2013 IPS Feedback Loop",
+    "DR": 96.9,
+    "FPR": 1.8,
+    "Precision": 90.5,
+    "F1": 0.936,
+    "TP": 174354,
+    "FP": 18360,
+    "TN": 1001640,
+    "FN": 5646,
+    "N_attacks": 180000,
+    "N_benign": 1020000,
+    "TTI": 214.99695800592954
+  },
+  {
+    "name": "Replace k-Center with k-Means",
+    "DR": 91.4,
+    "FPR": 3.5,
+    "Precision": 82.2,
+    "F1": 0.865,
+    "TP": 164529,
+    "FP": 35700,
+    "TN": 984300,
+    "FN": 15471,
+    "N_attacks": 180000,
+    "N_benign": 1020000,
+    "TTI": 404.4439118324577
+  }
+]
