@@ -1,0 +1,93 @@
+{
+  "single_seed": {
+    "k-Center (Proposed)": {
+      "DR": 96.86,
+      "FPR": 1.8,
+      "Precision": 90.47,
+      "F1": 0.9356,
+      "MCC": 0.9245,
+      "TP": 174354,
+      "FP": 18360,
+      "TN": 1001640,
+      "FN": 5646,
+      "AUC": 0.9809
+    },
+    "k-Means": {
+      "DR": 96.86,
+      "FPR": 1.8,
+      "Precision": 90.47,
+      "F1": 0.9356,
+      "MCC": 0.9245,
+      "TP": 174354,
+      "FP": 18360,
+      "TN": 1001640,
+      "FN": 5646,
+      "AUC": 0.9809
+    },
+    "Snort": {
+      "DR": 84.25,
+      "FPR": 1.8,
+      "Precision": 89.2,
+      "F1": 0.8666,
+      "MCC": 0.8443,
+      "TP": 151655,
+      "FP": 18360,
+      "TN": 1001640,
+      "FN": 28345
+    },
+    "Isolation Forest": {
+      "DR": 97.34,
+      "FPR": 16.75,
+      "Precision": 50.63,
+      "F1": 0.6662,
+      "MCC": 0.6353,
+      "TP": 175216,
+      "FP": 170822,
+      "TN": 849178,
+      "FN": 4784,
+      "AUC": 0.9802
+    },
+    "DBSCAN": {
+      "DR": 96.87,
+      "FPR": 1.76,
+      "Precision": 90.6,
+      "F1": 0.9363,
+      "MCC": 0.9254,
+      "TP": 28861,
+      "FP": 2996,
+      "TN": 167211,
+      "FN": 932,
+      "AUC": 0.981
+    }
+  },
+  "multi_seed": {},
+  "runtime": {
+    "k-Center (Proposed)": {
+      "total_s": 1.9483,
+      "per_session_us": 1.62
+    },
+    "k-Means": {
+      "total_s": 1.9504,
+      "per_session_us": 1.63
+    },
+    "Snort": {
+      "total_s": 0.0031,
+      "per_session_us": 0.0
+    },
+    "Isolation Forest": {
+      "total_s": 3.969,
+      "per_session_us": 3.31
+    },
+    "DBSCAN": {
+      "total_s": 7.3255,
+      "per_session_us": 146.51
+    }
+  },
+  "roc_auc": {
+    "k-Center (Proposed)": 0.9809,
+    "k-Means": 0.9809,
+    "Isolation Forest": 0.9802,
+    "DBSCAN": 0.981
+  },
+  "note": "Full eval test: 1,200,000, Train: 100,000; DBSCAN eval subset: 200,000"
+}

@@ -28,6 +28,7 @@ camouflage_net/
 ├── main.py                          # Entry point — run all experiments
 ├── config.py                        # All hyperparameters from paper
 ├── requirements.txt
+├── run_extended_baselines.py         # Reviewer-response baselines (Isolation Forest + DBSCAN)
 │
 ├── data/
 │   └── traffic_generator.py         # Synthetic SCADA session generator
@@ -86,10 +87,24 @@ python experiments/run_multi_seed.py --quiet
 
 # 5. Skip LSTM if PyTorch is not installed
 python main.py --no-lstm
+
+# 6. Extended baselines (reviewer response)
+python run_extended_baselines.py
 ```
 
 Results are saved to `results/` and figures to `results/figures/`.
 The multi-seed experiment writes `results/multi_seed_results.json`.
+The extended-baseline script writes `results/extended_baselines.json` and
+`results/figures/fig_roc_curves.png`.
+
+### Extended Baselines Notes
+
+- `run_extended_baselines.py` uses scikit-learn for Isolation Forest and DBSCAN.
+- Full-scale evaluation is used for k-Center, k-Means, Snort, and Isolation Forest
+  on the complete test set (1,200,000 sessions).
+- DBSCAN uses bounded fitting/scoring for practicality on commodity hardware.
+  The exact scope is recorded in `results/extended_baselines.json` under `note`.
+- In full-scale mode, the expensive multi-seed sweep is intentionally skipped.
 
 ---
 
