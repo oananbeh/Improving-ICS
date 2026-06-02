@@ -284,11 +284,7 @@ pip install -r requirements.txt
 If you use this implementation, please cite the original paper:
 
 ```bibtex
-@article{alnozami2025camouflagenet,
-  title   = {Improving {ICS} Security Through Honeynets and Machine Learning Techniques},
-  author  = {},
-  journal = {},
-  year    = {2026},
+
 }
 ```
 
