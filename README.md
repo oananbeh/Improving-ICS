@@ -285,7 +285,7 @@ If you use this implementation, please cite the original paper:
 
 ```bibtex
 
-}
+
 ```
 
 ---
