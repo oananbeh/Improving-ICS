@@ -284,7 +284,16 @@ pip install -r requirements.txt
 If you use this implementation, please cite the original paper:
 
 ```bibtex
-
+@article{ananbeh2026transformer,
+  title={Transformer-based deep learning framework for malware detection in Linux environments using structured process-level features},
+  author={Ananbeh, Obieda and Alnozami, Wala},
+  journal={Journal of Computer Virology and Hacking Techniques},
+  volume={22},
+  number={1},
+  pages={45},
+  year={2026},
+  publisher={Springer}
+}
 
 ```
 
@@ -292,4 +301,4 @@ If you use this implementation, please cite the original paper:
 
 ## License
 
-This implementation is provided for research and educational purposes.
+This project is licensed under the **MIT License**
