@@ -1,10 +1,11 @@
 # CamouflageNet — Full Implementation
 
 **Paper:** *Improving ICS Security Through Honeynets and Machine Learning Techniques*
-**Authors:** 
-**Affiliation:**
 
----
+| | |
+|---|---|
+| **Authors** | Obieda Ananbeh · Wala Alnozami |
+| **Affiliation** | Department of Computer Science and Engineering, Oakland University, Rochester, MI 48309, USA |
 
 ## Overview
 
